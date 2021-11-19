@@ -1,0 +1,11 @@
+@import "bootstrap/scss/bootstrap"; 
+@import 'flats';
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(240, 236, 236);
+  border-bottom: 1px solid;
+  padding: 20px;
+
+}

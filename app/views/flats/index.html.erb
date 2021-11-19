@@ -1,0 +1,22 @@
+<h2>All our flats<%= "(#{@flats.length})"%></h2>
+
+<div class="cards_container">
+    <% @flats.each do |flat| %>
+      <div class= "card">
+        <div class= "flat_infos">
+            <h3 class="name"><%= flat.name %></h3>
+            <p class="address"><%= flat.address %></p>
+            <i class="fas fa-user-friends"><%= flat.number_of_guests %></i>
+            <i class="fas fa-euro-sign"><%= flat.price_per_night %></i>
+        </div>
+        <div class="more_options">
+          <%= link_to 'Edit', new_flat_path %> |
+          <%= link_to 'Delete',
+            flat_path(flat),
+            method: :delete,
+            data: { confirm: "Are you sure you want to delete #{flat.name}?" } %>
+          <%= link_to "More Info", flat_path(flat)%>
+        </div>
+      </div>
+    <% end %>
+</div>
