@@ -32,17 +32,17 @@ Flat.create!(
 
 # Faker
 
-require 'faker'
+# require 'faker'
 
-puts 'Creating 100 fake flat...'
-100.times do
-  flat = Flat.new(
-    name: Faker::Lorem.sentence,
-    address: Faker::Address.street_address,
-    description: Faker::Lorem.paragraph,
-    price_per_night: Faker::Number.between(from: 50, to: 200),
-    number_of_guests: Faker::Number.between(from: 2, to: 10),
-  )
-  flat.save!
-end
-puts 'Finished!'
+# puts 'Creating 100 fake flat...'
+# 100.times do
+#   flat = Flat.new(
+#     name: Faker::Lorem.sentence,
+#     address: Faker::Address.street_address,
+#     description: Faker::Lorem.paragraph,
+#     price_per_night: Faker::Number.between(from: 50, to: 200),
+#     number_of_guests: Faker::Number.between(from: 2, to: 10),
+#   )
+#   flat.save!
+# end
+# puts 'Finished!'
