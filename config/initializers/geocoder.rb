@@ -7,7 +7,7 @@ Geocoder.configure(
   # use_https: false,           # use HTTPS for lookup requests? (if supported)
   # http_proxy: nil,            # HTTP proxy server (user:pass@host:port)
   # https_proxy: nil,           # HTTPS proxy server (user:pass@host:port)
-  api_key: 'https://https://api.mapbox.com/v4/mapbox.satellite/page.html?access_token=pk.eyJ1IjoicGF1bGluZXR3IiwiYSI6ImNrd3U1amJ2ZjFtdmIyb3FvcWhsN3Z2cHkifQ.Ov1FMRvYXYZT1oQ-Po45Sw#4/7.49/11.25',               # API key for geocoding service
+  # api_key: '',               # API key for geocoding service
   # cache: nil,                 # cache object (must respond to #[], #[]=, and #del)
   # cache_prefix: 'geocoder:',  # prefix (string) to use for all cache keys
 
