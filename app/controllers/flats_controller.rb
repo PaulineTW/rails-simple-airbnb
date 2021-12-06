@@ -2,7 +2,7 @@ class FlatsController < ApplicationController
   before_action :find_flat, only: [:show, :edit, :update, :destroy]
 
   def index
-    @flats = Flat.all
+    @flats = Flat.where.not(latitude: nil, longitude: nil)
         # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
     @markers = @flats.geocoded.map do |flat|
       {
