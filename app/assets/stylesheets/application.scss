@@ -1,16 +1,9 @@
 
-@import 'flats';
-
+// External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-
-.topnav {
-  display: flex;
-  justify-content: space-between;
-  background: rgb(240, 236, 236);
-  border-bottom: 1px solid;
-  padding: 20px;
-
-}
+// Your CSS partials
+@import "components/index";
+@import "pages/index";

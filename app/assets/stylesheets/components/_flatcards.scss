@@ -1,0 +1,21 @@
+.cards_container {
+  margin: 24px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  flex-direction: row;
+
+  .card {
+    width: 400px;
+    height: 200px;
+    padding: 12px;
+    margin: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .flat_infos {
+    // display: flex;
+    // justify-content: space-around;
+  }
+}
